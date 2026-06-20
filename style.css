@@ -1,0 +1,38 @@
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.tile-appear {
+    animation: appear 0.2s ease-in-out;
+}
+
+.tile-pop {
+    animation: pop 0.15s ease-in-out;
+}
+
+.tile-move {
+    transition: transform 0.15s ease-in-out;
+}
+
+.game-container {
+    touch-action: none;
+}

@@ -1,0 +1,7 @@
+ultralytics
+opencv-python
+numpy
+pandas
+gradio
+pillow
+playsound==1.2.2
